@@ -138,3 +138,31 @@ body{
 .boxes div p{
     margin: 10px;
 }
+
+@media screen and (min-width: 600px) {
+    /* Apply styles for tablets and larger screens */
+    .page {
+        flex-direction: row; /* Revert to horizontal layout for tablets */
+    }
+
+    .sidenav {
+        height: 700px; /* Reset height for tablets */
+    }
+
+    .logo img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .boxes {
+        flex-direction: row;
+    }
+
+    .singers {
+        flex-direction: row;
+    }
+
+    .subcontent {
+        flex-direction: row;
+    }
+}
