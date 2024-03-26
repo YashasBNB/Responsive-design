@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: DM Sans;
+    font-family: 'DM Sans', sans-serif;
     color: white;
 }
 
@@ -19,9 +19,9 @@ body{
     background-color: black;
     height: 700px;
     width: 250px;
-    top: 0; /*to stay at the top*/
+    top: 0;
     left: 0;
-    z-index: 1; /* To stay on the top */
+    z-index: 1;
 }
 
 .logo img {
@@ -139,30 +139,68 @@ body{
     margin: 10px;
 }
 
-@media screen and (min-width: 600px) {
-    /* Apply styles for tablets and larger screens */
+@media screen and (max-width: 600px) {
     .page {
-        flex-direction: row; /* Revert to horizontal layout for tablets */
+        flex-direction: column;
     }
 
     .sidenav {
-        height: 700px; /* Reset height for tablets */
+        width: 100%;
+        height: auto;
     }
 
     .logo img {
-        width: 60%;
-        height: 60%;
+        width: 50%;
     }
 
-    .boxes {
-        flex-direction: row;
+    .conten1 img, .content2 img, .content4 img {
+        padding: 10px;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .sidenav {
+        width: 250px;
     }
 
-    .singers {
-        flex-direction: row;
+    .logo img {
+        width: 70%;
+    }
+
+    .conten1 img, .content2 img, .content4 img {
+        padding: 15px 0px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    .con2 p {
+        font-size: 30px;
     }
 
     .subcontent {
-        flex-direction: row;
+        font-size: 20px;
+    }
+
+    .boxes div {
+        width: 17em;
+    }
+
+    .boxes div img {
+        width: 6em;
+        height: 6em;
+    }
+    
+    .singers div {
+        padding: 3%;
+    }
+
+    .singers div h2, .singers div p {
+        font-size: 16px;
     }
 }
